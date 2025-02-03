@@ -1,5 +1,6 @@
 
 import numpy as np  
+import pandas as pd
 from collections import Counter
 from matplotlib.colors import ListedColormap
 from sklearn import datasets
@@ -37,6 +38,7 @@ if __name__ == "__main__":
     cmap = ListedColormap(["#FF0000", "#00FF00", "#0000FF"])
 
     iris = datasets.load_iris()
+
     X, y = iris.data, iris.target
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
